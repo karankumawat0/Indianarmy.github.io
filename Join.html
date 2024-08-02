@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Indian Army</title>
+  <link rel="stylesheet" href="css/joinstyles.css">
+  
+</head>
+<body>
+  
+  <div class="container">
+    <h1 align="center">Join Indian Army</h1>
+    <form id="joinForm">
+      <fieldset>
+        <legend>Personal Details</legend>
+      <p><label for="Salutation">
+        Salutation
+        <br />
+        <select id="Salutation" name="salutation">
+            <option></option>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+            <option>Dr.</option>
+            <option>Prof.</option>
+        </select>
+    </label>
+  </p>
+  <p>
+      <label for="FirstName">First Name:</label>
+      <input type="text" id="FirstName" name="FirstName" required>
+    </p>
+
+    <p>
+      <label for="SecondName">Second Name:</label>
+      <input type="text" id="SecondName" name="SecondName" required>
+
+    </p>
+    <p>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+    </p>
+      
+    <p>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="null"></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="DOB">Date of Birth:
+        <input id="DOB" type="date" name="birthDate">
+      </label>
+  </p>
+    <p>
+      <label for="marital">Marital Status:</label>
+      <select id="marital" name="marital" required>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+      </select>
+
+    </p>  
+    <p>
+      <label for="High">High Qualification: </label>
+      <select id="High" name="High" required>
+        <option value="null">--None--</option>
+        <option value="10pass">10th Pass</option>
+        <option value="12pass">12th Pass</option>
+        <option value="other">Other</option>
+      </select>
+
+    </p>
+    <p>
+      <label for="qualification">Other Qualification:</label>
+      <input type="text" id="qualification" name="qualification">
+
+    </p>
+    <p>
+      <label for="applyFor">Position Applying For:</label>
+      <select id="applyFor" name="applyFor" required>
+        <option value="null">--None--</option>
+          <option value="officer">Officer</option>
+          <option value="soldier">Soldier</option>
+          <option value="engineer">Engineer</option>
+          <!-- Add more options as needed -->
+      </select>
+
+    </p>     
+   
+    <p>
+      <label for="Address">
+          Address :
+          <br />
+          <textarea id="Address" name="Address"
+                    cols="30" rows="3">
+            </textarea>
+      </label>
+  </p>
+  <p>
+    <label for="experience">
+      Military Experience (if any):<br />
+    <textarea id="experience" name="experience" rows="3" cols="30"></textarea>
+    </label>
+  </p>
+    
+      <button  type="button" onclick="submitForm()" >Submit</button>
+
+      <p id="demo"></p>
+    </fieldset>
+    </form>
+    <p id="responseMessage"></p>
+  </div>
+
+  <script src="js/joinscript.js"></script>
+</body>
+</html>

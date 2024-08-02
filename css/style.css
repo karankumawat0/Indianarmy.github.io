@@ -1,0 +1,119 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .ch-container {
+  position: relative;
+  min-height: 150px;
+  }
+  .my-3 {
+  margin-top: 1rem!important;
+  margin-bottom: 1rem!important;
+  }
+  *, ::after, ::before {
+  box-sizing: border-box;
+  }
+  div {
+  display: block;
+  }
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: auto}
+  .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  }
+  body {
+  font-size: 1.6rem;
+  background-color: #FFFFFF;
+  font-family: 'Poppins';
+  
+  }
+  body {
+  margin: 10px;
+  font-family: var(--bs-body-font-family);
+  font-size: 10px;
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: whitesmoke;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Set gray background color and 100% height */
+  html {
+  font-size: 62.5%;
+}
+.active{
+    font-style: oblique;
+    background-color: aquamarine;
+}
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+
+  .middlec{
+    padding: 25;
+  }
+  /* Set black background color, white text and some padding */
+  .footer p {
+  margin-bottom: 0px;
+  text-align: center;
+  color: #fff;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1vw;
+}
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 50px;
+    }
+    .row.content {height:auto;} 
+  }
+img{
+  top: auto;
+}
+
+.footer {
+  background-color: #000;
+  padding: 1rem 0;
+  position: relative;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+justify-content: space-between;
+display: inline-flex
+}
+

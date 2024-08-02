@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Army Training</title>
+    <link rel="stylesheet" href="css/Traningstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Indian Army Training</h1>
+    </header>
+    <section id="content">
+        <div id="schedule">
+            <h2>Training Schedule</h2>
+            <ul>
+                <li>Basic Training</li>
+                <li>Physical Fitness</li>
+                <li>Weapon Handling</li>
+                <li>Tactical Exercises</li>
+                <li>Leadership Training</li>
+            </ul>
+        </div>
+        <div id="apply">
+            <h2>Apply for Training</h2>
+            <form id="training-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="experience">Military Experience:</label>
+                <input type="text" id="experience" name="experience" required>
+
+                <button type="button" onclick="submitTrainingForm()">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/Traningscript.js"></script>
+</body>
+</html>
